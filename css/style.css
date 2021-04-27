@@ -1,0 +1,226 @@
+/*      MAIN SETUP      */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+:root{
+    --preto: #141414;
+    --vermelho: #e50914;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,#141414, #141414, #e50914);
+}
+/******/
+
+
+/*      HEADER      */
+header .container{
+    height: 60px;
+    padding: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header .container .logo{
+    font-size: 30px;
+    color: var(--vermelho);
+}
+
+header .container .nav-header a{
+    margin-right: 15px;
+    color: #aaa;
+}
+
+header .container .nav-header a:hover{
+    color: white;
+}
+
+header .container .menu-mobile{
+    display: none;
+}
+
+header .container .menu-mobile i{
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+/******/
+
+
+/*      MAIN        */
+main{
+    width: 100%;
+    height: 500px;
+    background:linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(../img/main001.jpg);
+}
+
+main .wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 0 0 2rem;
+}
+
+main .wrapper h2{
+    font-size: 35px;
+    padding-bottom: 1.2rem;
+}
+
+main .wrapper p{
+    width: 50%;
+    text-align: justify;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.botao{
+    padding: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, .50);
+}
+
+.botao:hover{
+    color: white;
+    background-color: var(--vermelho);
+    border: 1px solid white;
+}
+
+.botao i{
+    padding-right: 5px;
+}
+/*****/
+
+
+/*      MOVIES      */
+.carousel-wrapper{
+    padding:12.5px 0;
+}
+
+.carousel-wrapper h2{
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.movie-box{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.movie-box:hover{
+    opacity: 0.5;
+}
+/*****/
+
+
+/*      FOOTER      */
+.footer-container{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 6.4rem;
+}
+
+footer .footer-container p, .footer-container i{
+    color: #aaa;
+}
+
+footer .social-media{
+    display:flex;
+    justify-content: space-between;
+}
+
+footer .social-media i{
+    font-size: 35px;
+    padding-right: 1.5rem;
+    padding-bottom: 18px;
+}
+
+footer .social-media i:hover{
+    color: var(--vermelho);
+}
+
+footer .box-text{
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .box-text p{
+    cursor: pointer;
+}
+
+footer .box-text p:hover{
+    color: white;
+}
+
+footer .serv-code{
+    width: 160px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 8px 0;
+    border: 1px solid #aaa;
+}
+
+footer .serv-code:hover{
+    cursor: pointer;
+    background-color: var(--vermelho);
+}
+
+footer .rights p{
+    margin-bottom: 20px;
+}
+/*****/
+
+
+/*      RESPONSIVE      */
+@media (max-width: 1200px){
+    main .wrapper h2{
+        width: 60%;
+    }
+}
+@media (max-width: 750px){
+    header .container .logo{
+        font-size: 25px;
+    }
+
+    header .container .nav-header a{
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+    main .wrapper h2{
+        font-size: 30px;
+        width: 80%;
+    }
+    
+    main .wrapper p{
+        width: 80%;
+    }
+    
+    .botao{
+        padding: 8px;
+    }
+
+    footer .footer-container{
+        margin-top: 100px;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    footer .box-text{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
